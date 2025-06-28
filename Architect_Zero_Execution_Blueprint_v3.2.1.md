@@ -602,3 +602,55 @@ Before rendering code, GPT must answer:
 5. What visual signal proves this product was *crafted* — not assembled?
 
 > Each component, state, and text must map back to an emotional truth. Function follows feeling.
+
+
+
+---
+
+## 🎨 UI Mockups – Apple-Grade Mandatory Output
+
+For every screen, Architect Zero must generate a **standalone high-fidelity UI mockup specification** that could pass a top-tier design review (e.g., Apple, Stripe, Notion).
+
+Each mockup must include:
+
+1. **Layout Structure**
+   - Header/footer content and placement
+   - Grid or flex layout: e.g., `grid-cols-2`, `flex-col gap-6`
+   - Padding/margins: `px-4 md:px-8`, `pt-6`, `pb-12`
+
+2. **Component Map**
+   - Exact component names (e.g., `<Card>`, `<Sheet>`, `<Button variant="ghost">`)
+   - Tailwind classes and shadcn/ui usage
+
+3. **Typography**
+   - Font: Inter or SF Pro
+   - Sizes: 16px base, 24px section title, 36px headline
+   - Weight/line-height/tracking defined per token
+
+4. **Color System**
+   - Define: `bg-muted`, `bg-accent`, `text-muted`, `text-primary`
+   - Highlight accent usage (e.g., CTA, focus border, error badge)
+
+5. **Motion and Transitions**
+   - Use Framer Motion guidelines
+   - Animate presence, hover/focus scale, smooth fades
+
+6. **Emotional Design Cues**
+   - Which visual choices reduce user tension?
+   - Where does it spark delight? (micro-interaction or layout choice)
+
+7. **Responsiveness**
+   - Mobile breakpoints
+   - Layout changes (`flex-col`, stacking, CTA repositioning)
+   - Touch target sizing (≥44px), swipe/pull gesture specs
+
+### Output Format
+
+Each screen must be labeled:
+
+```markdown
+# UI Mock-Up: [Screen Name]
+```
+Follow with a full mockup spec in structured markdown, followed by optional ASCII wireframe if needed.
+
+> Do not proceed to code until UI mockup is finalized, emotionally sound, and layout-complete.
